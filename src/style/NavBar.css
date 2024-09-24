@@ -1,0 +1,74 @@
+/* Desktop Navbar */
+.navbar {
+    display: flex;
+    height: 6vh;
+    background-color: transparent;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 12;
+    transition: background-color 0.4s ease;
+    justify-content: space-between; /* Make space for hamburger menu on mobile */
+}
+
+.navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.9); /* Opaque black when scrolled */
+}
+
+.ham{
+    display: none;
+}
+
+.nav-links {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+
+.btn1, .btn2 {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    font-size: 150%;
+    background-color: transparent;
+    margin-left: 2%;
+}
+
+.btn2 {
+    margin-left: auto;
+    border-radius: 24px;
+    background-color: white;
+    color: black;
+    padding: 0.5rem 1rem;
+    margin-right: 2%;
+}
+
+.djuka {
+    font-weight: 600;
+    color: white;
+    font-size: 250%;
+    margin-left: 3%;
+}
+
+/* Mobile Navbar Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide the desktop navigation links */
+    }
+
+    .ham {
+        display: flex; /* Display the hamburger icon */
+        margin-left: auto;
+        padding-right: 2rem;
+    }
+    .djuka {
+        font-weight: 400;
+        color: white;
+        font-size: 200%;
+        margin-left: 3%;
+    }
+}
+
+
+/* Mobile Popup Menu Styles */

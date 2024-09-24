@@ -1,0 +1,73 @@
+.Land {
+    width: 100%;
+    height: 94vh;
+    display: flex;
+    
+    flex-direction: column;
+    background-color: #070707; /* Fallback color in case image doesn't load */
+    background-image: url('../asset/bg.svg'); /* Path to your SVG */
+    background-repeat: no-repeat; /* Prevents repeating of the image */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+}
+
+
+.mainhed{
+    color: white;
+    margin-top: 7%;
+    margin-left:10%;
+    font-size:350%;
+    font-weight: 600;
+    width: 30%;
+}
+
+.getbtn{
+    display: flex;
+    width: 20%;
+    height: 5vh;
+    margin-left:10%;
+    margin-top: 2%;
+    background-color: white;
+    border-radius: 25px;
+
+    
+}
+
+.getbtnn{
+    border: none;
+    background-color: transparent;
+    font-size: 150%;
+}
+
+
+.sub{
+    font-size: 100%;
+    color: white;
+    margin-left:10%;
+    margin-top: 2%;
+    width: 30%;
+}
+
+@media (max-width: 768px) {
+    .Land{
+        height: 70vh;
+    }
+    .mainhed{
+        margin-top: 20%;
+        font-size: 250%;
+    }
+    .getbtn{
+        margin-top: 10%;
+       width: 50%;
+       align-items: center;
+       justify-content: center;
+
+    
+        
+    }
+
+    .sub{
+        margin-top: 10%;
+        width: 60%;
+    }
+}

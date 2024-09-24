@@ -1,0 +1,119 @@
+.serve{
+    width: 100;
+    height: 100vh;
+    border-radius: 44px;
+    background-color: #f5f7f3;
+    margin-top: -2%;
+    display: flex;
+    flex-direction: row;
+    
+
+}
+
+.text-serve {
+    position:absolute;
+    width: 40%;
+    padding: 5%;
+}
+
+.text-serve h1 {
+    font-size: 250%;
+   
+}
+
+.text-serve p{
+    font-size: 120%;
+    
+}
+
+.card-serve{
+    width: 100%;
+    margin-left: 0%;
+    overflow-y: scroll;
+    background-color: rgba(0, 255, 255, 0);
+    position: relative;
+}
+
+.card{
+
+    width: 40%;
+    border-radius: 24px;
+    margin-bottom: 10%;
+    height: 45%;
+    position: sticky;
+    top: 5%;
+    margin-left: 50%;
+    align-items: center;
+    
+}
+
+
+.card:nth-child(1) {
+    z-index: 1; /* Ensure first card is on top */
+}
+
+.card:nth-child(2) {
+    z-index: 2;
+}
+
+.card:nth-child(3) {
+    z-index: 3;
+}
+
+.card:nth-child(4) {
+    z-index: 4;
+}
+
+
+.num{
+    font-size: 200%;
+    font-weight: 300%;
+    margin-left: 5%;
+    margin-top: 30%;
+}
+
+.card-hed{
+    margin-left: 5%;
+    font-size: 300%;
+}
+
+.card-hedD{
+    margin-left: 5%;
+    font-size: 150%;
+}
+
+@media (max-width: 768px) {
+     .serve{
+        flex-direction: column;
+        height: auto;
+        margin-top: -20%;
+     }
+     .text-serve {
+        position:relative;
+        width: 85%;
+        top: 0;
+        padding: 5%;
+    }
+     .card-serve{
+        top: 10%;
+       height: 60vh;
+        
+     }
+
+     .card{
+        margin-left: 10%;
+        width: 80%;
+        height:50% ;
+        padding: 3;
+     }
+
+     .card-hedD{
+        font-size: 100%;
+        margin-bottom: 3%;
+     }
+
+     .card-hed{
+        font-size: 200%;
+     }
+
+}

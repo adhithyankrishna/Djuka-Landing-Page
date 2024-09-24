@@ -1,0 +1,32 @@
+.form-container {
+    padding: 20px;
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px; /* Space between the items */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column; /* Stack label and input */
+}
+
+.full-width {
+    grid-column: span 2; /* Make this item span both columns */
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #007bff; /* Example color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}

@@ -1,0 +1,65 @@
+.focus {
+    width: 100%;
+    min-height: 100vh;  /* Ensure the section takes full viewport height */
+    display: flex;
+    flex-direction: row;
+    background-color: #ededed;
+    overflow: hidden;  /* Prevent content overflow */
+}
+
+.f-word {
+    width: 50%;
+    padding: 20px;  /* Add some padding for better spacing around the text */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* Vertically center the text content */
+}
+
+.f-word h1{
+    font-size: 300%;
+}
+
+.f-word p{
+    font-size:120%;
+}
+
+.f-word h2{
+    font-size: 200%;
+    color: blue;
+}
+
+.f-image {
+    width: 50%;
+    overflow: hidden;  /* Hide any overflow from the image */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.f-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Ensures the image covers the container fully */
+    max-height: 100vh;  /* Ensure the image doesn't exceed the viewport height */
+}
+
+.banner{
+    width: 100%;
+    height: 50vh;
+}
+
+.banner img{
+    object-fit: cover;
+}
+
+
+@media (max-width: 768px) {
+    .f-image{
+        display: none;
+    }
+    .f-word{
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+    }
+}

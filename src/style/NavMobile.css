@@ -1,0 +1,30 @@
+/* Mobile Popup Menu Styles */
+.mobile-popup {
+    position: absolute;
+    top: 6vh;
+    right :0%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 2rem;
+    z-index: 15;
+    border-radius: 8px;
+  }
+  
+  .mobile-menu {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .mobile-menu-item {
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .mobile-menu-item:hover {
+    color: lightgray;
+  } 
+  
